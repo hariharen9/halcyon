@@ -2979,19 +2979,19 @@ div.whoarewe-div {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #131313;
+  background-color: #313131;
   border-radius: 50px;  /* Increased from 10px to 20px */
   border: 3px solid black;  /* Increased border width from 2px to 3px */
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #131313;
+  background-color: #313131;
 }
 
 /* For Firefox */
 * {
   scrollbar-width: auto;  /* Changed from thin to auto for a wider scrollbar */
-  scrollbar-color: #131313 black;
+  scrollbar-color: #313131 black;
 }
     
 /* Adding box shadow to all work--item elements */
