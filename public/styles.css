@@ -2678,7 +2678,7 @@ footer .footer__inner {
     color: gray;
     display: flex;
     font-family: Articulat CF, system-ui, sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     justify-content: space-between;
     letter-spacing: 1px;
     padding-bottom: 16px;
@@ -2966,4 +2966,51 @@ div.whoarewe-div {
     font-size: 2rem;
   }
 }
+
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 16px;  /* Increased from 12px to 16px */
+  background-color: black;
+}
+
+::-webkit-scrollbar-track {
+  background-color: black;
+  border-radius: 50px;  /* Increased from 10px to 20px */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #131313;
+  border-radius: 50px;  /* Increased from 10px to 20px */
+  border: 3px solid black;  /* Increased border width from 2px to 3px */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #131313;
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: auto;  /* Changed from thin to auto for a wider scrollbar */
+  scrollbar-color: #131313 black;
+}
     
+/* Adding box shadow to all work--item elements */
+[class^="work--item"] {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+
+[class^="work--item"]:hover {
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* Adding box shadow to iframes */
+iframe {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+
+iframe:hover {
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
+}
+
